@@ -8,5 +8,6 @@ public:
     Bicicleta();
     void avanzar() override;
     void retroceder() override;
+    void mejorar() override;
 };
 #endif //SESSION12A_BICICLETA_H
