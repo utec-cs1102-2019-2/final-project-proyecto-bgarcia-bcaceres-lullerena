@@ -8,8 +8,7 @@ public:
 Motocicleta();
 void avanzar() override;
 void retroceder() override;
-
-
+void mejorar();
 };
 
 
