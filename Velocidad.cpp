@@ -10,7 +10,8 @@ Velocidad::Velocidad(int x, string personalidad) {
 void Velocidad::hipotermia(int hipo, int contextura, int pista) {
     if (pista==1){
         hipo=rand()%((contextura-psh)-0);
-    }
+    } else {
+        hipo=0;
 }
 void Velocidad::dificultad(piloto equilibrio, Vehiculo ruedas, string personalidad) {
     srand(time(nullptr));
