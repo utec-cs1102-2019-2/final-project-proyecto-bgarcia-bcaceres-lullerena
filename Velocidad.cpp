@@ -28,3 +28,12 @@ void Velocidad::dificultad(piloto equilibrio, Vehiculo ruedas, string personalid
 void Velocidad::velo_max() {
     velo_real=vel_min + rand ()% ((velo_int+dif+hipo)-vel_min);
 }
+void Velocidad::get_roca(){
+    return psr;
+}
+void Velocidad::get_helada()
+{
+    return psh;}
+void Velocidad::get_supremo(){
+    return pss;}
+
