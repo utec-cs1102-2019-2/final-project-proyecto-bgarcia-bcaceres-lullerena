@@ -24,6 +24,9 @@ public:
     void hipotermia(int hipo, piloto contextura, Pista x);
     void dificultad(piloto equilibrio, Vehiculo ruedas);
     void velo_max();
+    void get_roca();
+    void get_helada();
+    void get_supremo();
     virtual ~Velocidad();
 };
 
