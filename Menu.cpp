@@ -5,6 +5,7 @@ using namespace std;
 #include <iostream>
 #include <string>
 #include <cstdio>
+
 enum class Opciones { Agregar=1, Iniciar=2, Pistas=3};
 Menu::Menu(){};
 
@@ -29,38 +30,7 @@ void Menu::ejecutar() {
     } while (m_opcion != 0);
     cout << "Fin del programa...\n";
 }
-void Menu::opcionesV(int dinero,int dganado){
-    cout<<"Dinero actual : s/. "<<dinero<<endl;
-    cout<<"Vehiculos disponibles para comprar :"<<endl<<"1) Automovil S /550"<<endl;
-    cout<<"2) Troncomovil S / 900"<<endl<<"3) Motocicleta S / 370"<<endl<<"4) Bicicleta S / 1050"<<endl;
-    dinero=dganado+dinero;
-    string nombre="";
-    if(dinero>=370){
-        int a;
-        cout<<"Ingrese el numero de vehiculo para comprar : ";
-        cin>>a;
-        if(a==1){
-            dinero=dinero-550;
-            cout<<"Ingrese nombre del Vehiculo";
-            cin>>nombre;
-        }
-        if(a==2){
-            dinero=dinero-900;
-            cout<<"Ingrese nombre del Vehiculo";
-            cin>>nombre;}
 
-        if(a==3){
-            dinero=dinero-370;
-            cout<<"Ingrese nombre del Vehiculo";
-            cin>>nombre;}
-        if(a==4){
-            dinero=dinero-1050;
-            cout<<"Ingrese nombre del Vehiculo";
-            cin>>nombre;
-        }}
-    else{cout<<"\n"<<"No se puede comprar ningún vehiculo con el dinero actual";}
-    m_Juego.nuevoV(new Vehiculo(nombre));
-}
 void Menu::opcionesPistas(){
   cout<<"Pistas:"<<endl<<"1. Pista de hielo"<<endl<<"2.Pista Rocosa"<<endl<<"3. Pista suprema"<<endl;
   int a=0;
@@ -75,13 +45,14 @@ void Menu::opcionesPistas(){
    Pista pista(3);
  }
 }
+
 void Menu::seleccionarOpcion() {
     limpiar();
     switch(Opciones(m_opcion)) {
-        case Opciones::Agregar:  // comprar vehiculo
-        opcionesV(dinero, dganado);
+        case Opciones::Agregar: 
+        m_xd->muestraopciones();
             break;
-        case Opciones::Iniciar:  // Iniciar carrera FALTAAAAA
+        case Opciones::Iniciar: 
       
         case Opciones::Pistas:
         opcionesPistas();
