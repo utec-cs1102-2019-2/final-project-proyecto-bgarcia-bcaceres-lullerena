@@ -10,8 +10,10 @@ private:
     int psr;
 public:
     Menu *pista;
-    Pista(int pista);
+    Pista(Menu *pista);
     virtual ~Pista();
+    void tPista(int pista);
+
 
 };
 
