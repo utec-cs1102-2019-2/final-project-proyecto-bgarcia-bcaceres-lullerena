@@ -8,13 +8,14 @@
 class Sucesos {
 private:
     int daños;
-    Vehiculo carroseria;
-    Pista psr;
+    Vehiculo *carroseria;
+    Pista *psr;
 public:
     Sucesos(int daños, Vehiculo *carroseria, Pista *psr);
+    void daños_carro(int daños, int carroseria, int psr);
     ~Sucesos();
 
 };
 
 
-#endif //PROYECTOPISTA_SUCESOS_H
+#endif
