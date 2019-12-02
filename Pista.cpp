@@ -17,3 +17,4 @@ void Pista::tPista(int pista) {
     }
 }
 Pista::~Pista() {}
+
