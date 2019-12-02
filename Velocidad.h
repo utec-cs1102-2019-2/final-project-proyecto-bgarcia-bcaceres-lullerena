@@ -1,6 +1,7 @@
 #ifndef PROYECTOPISTA_VELOCIDAD_H
 #define PROYECTOPISTA_VELOCIDAD_H
 #include <iostream>
+#include <vector>
 #include "Piloto.h"
 #include "Pista.h"
 #include "Vehiculo.h"
@@ -12,21 +13,19 @@ private:
     int efect_os=60;
     int hipo;
     int dif;
-    Pista *x;
+    vector<Pista> *x;
     piloto *contextura;
     piloto *personalidad;
     piloto *equilibrio;
     Vehiculo *ruedas;
+    Pista *psh;
     int velo_real;
     int vel_min=35;
 public:
     Velocidad(int x, string personalidad);
-    void hipotermia(int hipo, piloto contextura, Pista x);
-    void dificultad(piloto equilibrio, Vehiculo ruedas);
+    void hipotermia(piloto contextura, Pista *psh);
+    void Dificultad(piloto *equilibrio, int ruedas, string *personalidad);
     void velo_max();
-    void get_roca();
-    void get_helada();
-    void get_supremo();
     virtual ~Velocidad();
 };
 
