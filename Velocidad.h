@@ -23,8 +23,8 @@ private:
     int vel_min=35;
 public:
     Velocidad(int x, string personalidad);
-    void hipotermia(piloto contextura, Pista *psh);
-    void Dificultad(piloto *equilibrio, int ruedas, string *personalidad);
+    void hipotermia(int contextura, int psh);
+    void Dificultad(int equilibrio, int ruedas, string personalidad);
     void velo_max();
     virtual ~Velocidad();
 };
