@@ -1,4 +1,9 @@
 #include "Vehiculo.h"
+#include "auto.h"
+#include "Bicicleta.h"
+#include "Motocicleta.h"
+#include "Troncomovil.h"
+
 class MenuVehiculos{
 private:
 int dinero;
@@ -9,5 +14,5 @@ MenuVehiculos();
 ~MenuVehiculos();
 void muestraopciones();
 void comprar(int dinero,int dganado);
-void SetVehiculo(Vehiculo* pvehiculo)
+void setVehiculo(Vehiculo* pvehiculo);
 };
