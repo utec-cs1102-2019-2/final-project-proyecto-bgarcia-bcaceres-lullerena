@@ -2,19 +2,20 @@
 #define PROYECTO_MENU_H
 #include "Vehiculo.h"
 #include "Pista.h"
-class Menu{
+class Menu {
     int dinero;
     Vehiculo* m_vehiculo;
     Pista *pista;
-    int dganado;
     int m_opcion;
+    int dganado;
+public:
+    Menu();
     void opcionesV(int dinero, int dganado);
     void opcionesPistas();
     void imprimirMenu();
     void seleccionarOpcion();
-
-
-public:
-    Menu():m_opcion{}{}
+    virtual ~Menu();
     void ejecutar();
 };
+
+#endif
