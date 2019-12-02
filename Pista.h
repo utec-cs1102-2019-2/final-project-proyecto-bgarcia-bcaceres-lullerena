@@ -9,13 +9,7 @@ private:
     int psh;
     int psr;
 public:
-    Menu *pista;
-    Pista(Menu *pista);
+    Pista(int pista);
     virtual ~Pista();
-    void tPista(int pista);
-
 
 };
-
-
-#endif //PROYECTOPISTA_PISTA_H
