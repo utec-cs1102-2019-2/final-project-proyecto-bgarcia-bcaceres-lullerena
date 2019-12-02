@@ -66,16 +66,15 @@ void Menu::opcionesPistas(){
   int a=0;
  cout<<"Seleccione pista"<<endl;cin>>a;
  if(a==1){
-   Pista pista=1;
+   Pista pista(1);
  }
  if(a==2){
-   Pista pista=2;
+   Pista pista(2);
  }
  if(a==3){
-   Pista pista=3;
+   Pista pista(3);
  }
 }
-
 void Menu::seleccionarOpcion() {
     limpiar();
     switch(Opciones(m_opcion)) {
